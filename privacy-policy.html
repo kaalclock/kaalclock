@@ -41,6 +41,12 @@ th{background:var(--soft)}
 .docs a{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;color:var(--ink)}
 .docs a span{display:block;font-size:13px;color:var(--muted)}
 footer{border-top:1px solid var(--line);margin-top:20px}
+h2,h3,section{scroll-margin-top:120px}
+a.hl{color:var(--brass2);background:color-mix(in srgb,var(--brass) 15%,transparent);padding:1px 6px;border-radius:6px;font-weight:600;text-decoration:none;white-space:nowrap}
+a.hl:hover{background:var(--brass);color:var(--bg)}
+.related{margin-top:22px;background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:14px 18px}.related p{margin:6px 0 0;text-align:left;hyphens:none;line-height:2}
+.feat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:6px 18px 10px;margin:12px 0}.feat h3{margin-top:12px}.feat li{text-align:left;hyphens:none}
+footer nav a{color:var(--brass2);font-weight:600}
 footer .in{max-width:880px;margin:0 auto;padding:20px 16px 36px;display:grid;gap:8px;font-size:14px;color:var(--muted)}
 footer nav a{color:var(--muted);margin-right:14px;font-size:14px}
 </style></head><body>
@@ -62,7 +68,7 @@ footer nav a{color:var(--muted);margin-right:14px;font-size:14px}
     <li>Technical records the app needs to work: the time the 24-hour unlock started, the time a break ad was last shown, and, only while an alarm is ringing, the alarm's name and tasks so that it can ring again if the phone is restarted before the task is done. This record is removed as soon as the alarm is turned off.</li>
     <li>Your AI API key, if you add one. It is <b>encrypted with the Android Keystore</b>, never shown back on screen and never sent to us.</li>
   </ul>
-  <p>This information is excluded from Android cloud backups. It stays until you change it, tap <b>Settings → Delete all my data</b>, clear the app's storage, or uninstall the app; any of these deletes it permanently.</p>
+  <p>This information is excluded from Android cloud backups. It stays until you change it, tap <b>Settings → <a class="hl" href="delete-data.html">Delete all my data</a></b>, clear the app's storage, or uninstall the app; any of these deletes it permanently.</p>
 
   <h3>2. Summary table: what leaves your phone and what never does</h3>
   <table class="dtab">
@@ -146,7 +152,7 @@ footer nav a{color:var(--muted);margin-right:14px;font-size:14px}
 
   <h3>12. Contact and grievances</h3>
   <p>Questions, requests or complaints about privacy: <b><a href="mailto:support.kaalclock@gmail.com">support.kaalclock@gmail.com</a></b>. We aim to reply within 7 days and to resolve grievances within 30 days.</p>
-</article></main>
+</article><aside class="related"><b>Related pages</b><p>Also read the <a class="hl" href="terms.html">Terms of Use</a> and the <a class="hl" href="health-disclaimer.html">Health Disclaimer</a>. To remove everything the app saved, see <a class="hl" href="delete-data.html">Delete your data</a>. Back to the <a class="hl" href="index.html">Kaal Clock home page</a>.</p></aside></main>
 <footer><div class="in"><nav aria-label="Legal"><a href="privacy-policy.html">Privacy Policy</a> <a href="terms.html">Terms of Use</a> <a href="health-disclaimer.html">Health Disclaimer</a> <a href="delete-data.html">Delete your data</a></nav>
 <div>Kaal Clock · Android app (app.muhurat.clock) · Contact: <a href="mailto:support.kaalclock@gmail.com">support.kaalclock@gmail.com</a></div>
 <div>General information from classical texts; not medical advice. Weather data © MET Norway (CC BY 4.0). Place data: GeoNames (CC BY 4.0).</div>

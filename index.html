@@ -41,6 +41,12 @@ th{background:var(--soft)}
 .docs a{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;color:var(--ink)}
 .docs a span{display:block;font-size:13px;color:var(--muted)}
 footer{border-top:1px solid var(--line);margin-top:20px}
+h2,h3,section{scroll-margin-top:120px}
+a.hl{color:var(--brass2);background:color-mix(in srgb,var(--brass) 15%,transparent);padding:1px 6px;border-radius:6px;font-weight:600;text-decoration:none;white-space:nowrap}
+a.hl:hover{background:var(--brass);color:var(--bg)}
+.related{margin-top:22px;background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:14px 18px}.related p{margin:6px 0 0;text-align:left;hyphens:none;line-height:2}
+.feat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:6px 18px 10px;margin:12px 0}.feat h3{margin-top:12px}.feat li{text-align:left;hyphens:none}
+footer nav a{color:var(--brass2);font-weight:600}
 footer .in{max-width:880px;margin:0 auto;padding:20px 16px 36px;display:grid;gap:8px;font-size:14px;color:var(--muted)}
 footer nav a{color:var(--muted);margin-right:14px;font-size:14px}
 </style></head><body>
@@ -50,20 +56,86 @@ footer nav a{color:var(--muted);margin-right:14px;font-size:14px}
 <section class="hero">
   <h1>Kaal Clock</h1>
   <p class="lead"><b>Task Alarm &amp; Focus.</b> An alarm that stops only after you are really awake, a calm focus timer, and a beautiful
-  30-muhurat watch from the Indian tradition, with a normal 24-hour clock too.</p>
-  <div class="btns"><a class="btn primary" href="https://play.google.com/store/apps/details?id=app.muhurat.clock">Get it on Google Play</a><a class="btn" href="privacy-policy.html">Privacy Policy</a></div>
+  30-muhurat watch from the Indian tradition, with a normal 24-hour clock too. Free, private, and in 11 languages.</p>
+  <div class="btns"><a class="btn primary" href="https://play.google.com/store/apps/details?id=app.muhurat.clock">Get it on Google Play</a><a class="btn" href="#features">See all features</a><a class="btn" href="#pages">Policies &amp; help</a></div>
 </section>
 
 <div class="grid">
-  <div class="card"><b>⏰&nbsp; Task alarm</b><p>Turn the alarm off only after walking steps, squats, sums, shaking the phone or typing a line. Combine several tasks.</p></div>
-  <div class="card"><b>🔁&nbsp; Hard to skip</b><p>It rings over the lock screen, keeps your progress, and rings again if the phone is restarted.</p></div>
-  <div class="card"><b>🎯&nbsp; Focus timer</b><p>Count up or down, digital or analog, full screen, with rain, fire or wind-chime sounds and a daily streak.</p></div>
-  <div class="card"><b>🕰️&nbsp; Three clocks</b><p>30 muhurat with ghati·pal or kala·kashtha, or a normal 24-hour clock. Home-screen widgets in light and dark.</p></div>
-  <div class="card"><b>🍲&nbsp; Daily food &amp; routine</b><p>Seasonal food and daily-routine traditions from the classical texts, for your place and weather.</p></div>
-  <div class="card"><b>🔒&nbsp; Private by design</b><p>No account, no servers. Alarms, settings and history stay on your phone. 11 languages.</p></div>
+  <div class="card"><b>⏰&nbsp; Task alarm</b><p>Turn the alarm off only after walking, squats, sums, shaking or typing.</p></div>
+  <div class="card"><b>🎯&nbsp; Focus timer</b><p>Full-screen timer with soft sounds and a daily streak.</p></div>
+  <div class="card"><b>🔒&nbsp; Private by design</b><p>No account, no servers. Your data stays on your phone.</p></div>
 </div>
 
-<h2>Policies and help</h2>
+<h2 id="features">All features</h2>
+
+<section class="feat"><h3>⏰ Alarms that make sure you are awake</h3><ul>
+  <li><b>Add alarm</b> in one simple screen: time, name, ringtone and tasks.</li>
+  <li>Set the time in <b>muhurat and kala</b>, or type a normal clock time; it is shown big in <b>AM/PM</b>.</li>
+  <li><b>Turn-off tasks:</b> tap, solve sums, <b>walk steps</b>, <b>squats</b> (up and down), shake the phone, or type a shloka line. Choose <b>how many</b> (for example 80 steps).</li>
+  <li><b>Combine tasks:</b> up to 4 in a row, for example walk 50 steps, then solve 3 sums.</li>
+  <li><b>Any ringtone:</b> singing bowl, temple bell, muhurat bell, soft ding, the phone's alarm tone or any song on your phone, with a ▶ preview.</li>
+  <li>Repeat on chosen days, and <b>🔔 Test this alarm</b> to try it right away.</li>
+</ul></section>
+
+<section class="feat"><h3>🔔 When it rings</h3><ul>
+  <li>Rings over the lock screen and grows louder slowly, with vibration.</li>
+  <li><b>Back does not close it</b>; if you press Home, the alarm comes back (optional permission).</li>
+  <li><b>Progress is kept:</b> leave and return, and your steps or sums continue where you were.</li>
+  <li>If the phone is switched off while ringing, the alarm <b>rings again after the restart</b>.</li>
+  <li>Snooze 5 kala (8 minutes) for simple tap alarms.</li>
+</ul></section>
+
+<section class="feat"><h3>🎯 Focus timer</h3><ul>
+  <li>Default 1 ghati (24 minutes) focus and 3 kala break; change focus, break, long break and rounds with − and +.</li>
+  <li>Count <b>down or up</b>; show time in <b>minutes</b> or <b>ghati · pal</b>; <b>digital or analog</b> dial.</li>
+  <li><b>Full screen</b>: a big clean timer, tap to pause, turn sideways, Back to leave.</li>
+  <li><b>Soft sounds</b> made in the app: rain, fire, wind chimes, ocean waves, soft wind, tick.</li>
+  <li>History of the last 14 days, weekly total and <b>streak</b>, saved on your phone.</li>
+</ul></section>
+
+<section class="feat"><h3>🕰️ Three ways to read time</h3><ul>
+  <li><b>30 muhurat</b> of 48 minutes from midnight, read as <b>ghati · pal · vipal</b> or <b>kala · kashtha</b>.</li>
+  <li>A normal <b>24-hour clock</b> for anyone who prefers usual time.</li>
+  <li>A brass-and-indigo watch face with day, night and dosha rings; light and dark themes.</li>
+  <li><b>Time zone</b> follows your place, your phone, India (IST) or any zone you pick.</li>
+</ul></section>
+
+<section class="feat"><h3>📱 Home-screen widgets</h3><ul>
+  <li>Four widgets: full, digital, analog and a Nothing-style dot design.</li>
+  <li><b>Light, dark or automatic</b> style, chosen in Settings.</li>
+</ul></section>
+
+<section class="feat"><h3>🍲 Aaj: today's food and routine</h3><ul>
+  <li>Seasonal food and daily-routine traditions from the classical texts, for <b>your place</b> and season, changing every day.</li>
+  <li>Optional weather (MET Norway) and air quality for India (CPCB) to match today's temperature.</li>
+  <li>Five new lines every day: food, kitchen herbs and spices, habit, exercise and a shloka.</li>
+  <li>Covers every Indian district and 1,500+ cities worldwide; seasons flip south of the equator.</li>
+</ul></section>
+
+<section class="feat"><h3>📚 Gyaan</h3><ul>
+  <li>The 30-muhurat guide, the classical daily order (dinacharya), the dosha clock and a season-by-season food guide.</li>
+  <li>Sources named for every point (Charaka Samhita, Ashtanga Hridaya and more).</li>
+</ul></section>
+
+<section class="feat"><h3>🤖 Optional AI guide</h3><ul>
+  <li>With your own free Gemini key (or a Claude key), get a daily note and answers about food and routine for your place.</li>
+  <li><b>Find working models</b> tests which models your key can use. The key is encrypted on your phone.</li>
+</ul></section>
+
+<section class="feat"><h3>🌐 Languages and more</h3><ul>
+  <li>English, Hinglish, हिन्दी, বাংলা, मराठी, தமிழ், తెలుగు, Español, Français, Deutsch, Português.</li>
+  <li>A short guide on first launch; reopen it any time in Settings → About.</li>
+  <li>A clear Save button in Settings, and <b>Delete all my data</b> in one tap.</li>
+</ul></section>
+
+<section class="feat"><h3>🔒 Privacy, ads and safety</h3><ul>
+  <li>No account and no servers. Alarms, settings and history never leave your phone. Read the <a class="hl" href="privacy-policy.html">Privacy Policy</a>.</li>
+  <li>Free with Google ads: a small banner, an optional 24-hour unlock video, and at most one short break ad a day. The clock, alarms and widgets are always free.</li>
+  <li>Food and routine traditions only, never medical advice. Read the <a class="hl" href="health-disclaimer.html">Health Disclaimer</a>.</li>
+  <li>Delete everything any time. See <a class="hl" href="delete-data.html">Delete your data</a>.</li>
+</ul></section>
+
+<h2 id="pages">Policies and help</h2>
 <div class="docs">
   <a href="privacy-policy.html">Privacy Policy<span>What data is used and where it goes</span></a>
   <a href="terms.html">Terms of Use<span>Rules for using the app</span></a>
