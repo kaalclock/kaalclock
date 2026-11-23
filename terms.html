@@ -1,9 +1,52 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Terms of Use · Kaal Clock</title><style>body{margin:0;background:#f5f1e8;color:#1f1b14;font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-main{max-width:720px;margin:0 auto;padding:32px 20px 64px}h1{font:600 28px Georgia,serif;color:#7d540c;margin:0 0 4px}
-h2{font:600 24px Georgia,serif;color:#7d540c}h3{font-size:18px;margin:22px 0 6px}ul,ol{padding-left:22px}
-.note{color:#665f50;font-size:14px}nav a{color:#7d540c;margin-right:14px}
-table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid #e2d9c6;padding:7px 8px;text-align:left;vertical-align:top}th{background:#efe8d9}</style></head><body><main><h1>Kaal Clock</h1><nav><a href="privacy-policy.html">Privacy Policy</a> <a href="health-disclaimer.html">Health Disclaimer</a> <a href="terms.html">Terms of Use</a></nav>
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Terms of Use · Kaal Clock</title>
+<meta name="description" content="Terms of Use for the Kaal Clock Android app.">
+<meta name="color-scheme" content="light dark">
+<style>
+:root{--bg:#f5f1e8;--card:#fffdf8;--ink:#1f1b14;--ink2:#3a3428;--muted:#6a6252;--line:#e2d9c6;--brass:#8a5e14;--brass2:#b07a1c;--soft:#efe8d9}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0e1c;--card:#141831;--ink:#f1ebdd;--ink2:#d9d3c4;--muted:#a8a5c0;--line:#2a3054;--brass:#d9b26a;--brass2:#e9c98a;--soft:#1c2142}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-text-size-adjust:100%}
+a{color:var(--brass2)}
+.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .in{max-width:880px;margin:0 auto;padding:10px 16px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font:600 20px Georgia,serif}
+.brand .dot{width:30px;height:30px;border-radius:50%;background:radial-gradient(circle at 50% 50%,var(--brass) 0 18%,transparent 19%),conic-gradient(var(--brass) 0 8%,var(--line) 8% 100%);border:2px solid var(--brass)}
+nav.menu{display:flex;flex-wrap:wrap;gap:4px 6px;margin-left:auto}
+nav.menu a{font-size:14px;text-decoration:none;color:var(--ink2);padding:6px 10px;border-radius:99px}
+nav.menu a:hover{background:var(--soft)}
+nav.menu a.on{background:var(--brass);color:var(--bg)}
+main{max-width:880px;margin:0 auto;padding:28px 16px 48px}
+h1{font:600 clamp(30px,6vw,44px)/1.15 Georgia,serif;margin:0 0 8px}
+h2{font:600 26px Georgia,serif;color:var(--brass);margin:0 0 6px}
+h3{font-size:18px;margin:26px 0 6px}
+p,li{color:var(--ink2);text-align:justify;hyphens:auto}
+ul,ol{padding-left:22px}
+.note{color:var(--muted);font-size:14px;text-align:left;hyphens:none}
+.legal{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px clamp(16px,4vw,32px)}
+table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px 9px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+.hero{display:grid;gap:14px;padding:18px 0 8px}
+.hero .lead{font-size:18px;color:var(--ink2);max-width:640px;text-align:left;hyphens:none}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:12px 20px;border-radius:99px;text-decoration:none;font-weight:600;border:1px solid var(--line);color:var(--ink)}
+.btn.primary{background:var(--brass);border-color:var(--brass);color:var(--bg)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:26px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.card b{display:block;font-size:17px;margin-bottom:4px}
+.card p{margin:0;font-size:15px;text-align:left;hyphens:none}
+.docs{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.docs a{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;color:var(--ink)}
+.docs a span{display:block;font-size:13px;color:var(--muted)}
+footer{border-top:1px solid var(--line);margin-top:20px}
+footer .in{max-width:880px;margin:0 auto;padding:20px 16px 36px;display:grid;gap:8px;font-size:14px;color:var(--muted)}
+footer nav a{color:var(--muted);margin-right:14px;font-size:14px}
+</style></head><body>
+<header class="top"><div class="in"><a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>Kaal Clock</a>
+<nav class="menu" aria-label="Pages"><a href="index.html">Home</a><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html" class="on">Terms of Use</a><a href="health-disclaimer.html">Health Disclaimer</a><a href="delete-data.html">Delete your data</a></nav></div></header>
+<main><article class="legal">
   <h2>Terms of Use</h2>
   <p class="note">Effective date: 23 November 2026</p>
   <ol>
@@ -23,4 +66,9 @@ table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid 
     <li><b>Law and disputes.</b> These terms are governed by the laws of India. Before any formal dispute, please contact us so we can try to resolve it.</li>
   </ol>
   <p>Contact: <b><a href="mailto:support.kaalclock@gmail.com">support.kaalclock@gmail.com</a></b></p>
-</main></body></html>
+</article></main>
+<footer><div class="in"><nav aria-label="Legal"><a href="privacy-policy.html">Privacy Policy</a> <a href="terms.html">Terms of Use</a> <a href="health-disclaimer.html">Health Disclaimer</a> <a href="delete-data.html">Delete your data</a></nav>
+<div>Kaal Clock · Android app (app.muhurat.clock) · Contact: <a href="mailto:support.kaalclock@gmail.com">support.kaalclock@gmail.com</a></div>
+<div>General information from classical texts; not medical advice. Weather data © MET Norway (CC BY 4.0). Place data: GeoNames (CC BY 4.0).</div>
+<div>© 2026 Kaal Clock. All rights reserved.</div></div></footer>
+</body></html>
